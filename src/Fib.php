@@ -21,9 +21,9 @@ class Fib
      */
     protected static function checkResponse($response, $message = 'Internal Server Error')
     {
-        if ($response->failed()) {
-            throw new InternalErrorException($response->json(), Response::HTTP_INTERNAL_SERVER_ERROR);
-        }
+        // if ($response->failed()) {
+        //     throw new InternalErrorException($response->json(), Response::HTTP_INTERNAL_SERVER_ERROR);
+        // }
 
         return $response->json();
     }
